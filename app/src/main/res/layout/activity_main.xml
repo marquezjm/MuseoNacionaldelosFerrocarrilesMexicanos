@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jose.museonacionaldelosferrocarrilesmexicanos.MainActivity"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <Button
+        android:text="Eventos y Cursos"
+        percent:layout_widthPercent="25%"
+        percent:layout_heightPercent="5%"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button5"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ViewFlipper
+        android:id="@+id/vf1"
+        android:layout_width="match_parent"
+        percent:layout_heightPercent="30%">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            percent:srcCompat="@drawable/ferrocarril"
+            android:id="@+id/imageView"
+             />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            percent:srcCompat="@drawable/estacionesferrocarriles"
+            android:id="@+id/imageView2"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            percent:srcCompat="@drawable/fair"
+            android:id="@+id/imageView3"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            percent:srcCompat="@drawable/trenmmm"
+            android:id="@+id/imageView4"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            percent:srcCompat="@drawable/ferrocarril2"
+            android:id="@+id/imageView5"
+            />
+    </ViewFlipper>
+
+    <ImageView
+        percent:layout_widthPercent="20%"
+        percent:layout_heightPercent="10%"
+        percent:srcCompat="@drawable/logomuseo"
+        android:layout_marginTop="11dp"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/vf1"
+        android:layout_centerHorizontal="true"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:text="MNFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="Buscar con codigo QR"
+        percent:layout_widthPercent="40%"
+        percent:layout_heightPercent="5%"
+        android:layout_marginTop="11dp"
+        android:id="@+id/button2"
+        android:background="@drawable/boton"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Recorrido Guiado"
+        percent:layout_widthPercent="25%"
+        percent:layout_heightPercent="5%"
+        android:id="@+id/button"
+        android:background="@drawable/boton"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Configuracion"
+        percent:layout_widthPercent="20%"
+        percent:layout_heightPercent="5%"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button3"
+        android:background="@drawable/boton"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Informacion"
+        percent:layout_widthPercent="20%"
+        percent:layout_heightPercent="5%"
+        android:id="@+id/button4"
+        android:background="@drawable/boton"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:onClick="info"/>
+
+
+</android.support.percent.PercentRelativeLayout>
