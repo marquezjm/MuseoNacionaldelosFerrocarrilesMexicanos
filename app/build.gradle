@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
     defaultConfig {
         applicationId "com.example.jose.museonacionaldelosferrocarrilesmexicanos"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -19,7 +19,9 @@ android {
         }
     }
 }
-
+repositories {
+    mavenCentral()
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -29,5 +31,6 @@ dependencies {
     compile 'com.android.support:percent:24.2.1'
     compile 'com.android.support:multidex:+'
     compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
     testCompile 'junit:junit:4.12'
 }

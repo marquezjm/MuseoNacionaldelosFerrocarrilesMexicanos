@@ -49,34 +49,41 @@ public class Informacion extends AppCompatActivity {
         listDataHeader.add("Servicios");
         listDataHeader.add("Como llegar");
         listDataHeader.add("Creditos");
+        listDataHeader.add("Comentarios y Sugerencias");
 
         // Adding child data
-        List<String> top250 = new ArrayList<String>();
-        top250.add("Direccion\n******\n\nTelefono\n*******\n\nPagina Web\nmuseoferrocarrilesmexicanos.gob.mx\n");
+        List<String> direccion = new ArrayList<String>();
+        direccion.add("Direccion\n******\n\nTelefono\n*******\n\nPagina Web\nmuseoferrocarrilesmexicanos.gob.mx\n");
 
 
-        List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("Informacion de Horarios\nDias y Horas de apertura y cierre del museo\n");
+        List<String> horarios = new ArrayList<String>();
+        horarios.add("Informacion de Horarios\nDias y Horas de apertura y cierre del museo\n");
 
 
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add(" ");
+        List<String> tarifa = new ArrayList<String>();
+        tarifa.add("Costos de entrada general e informacion de descuentos ");
 
         List<String> Servicios = new ArrayList<String>();
-        comingSoon.add(" ");
+        Servicios.add("Informacion de diferentes servicios que ofrece el museo\n" +
+                "como silla de ruedas, libreria, biblioteca, bebeteca, etc.");
 
         List<String> llegar = new ArrayList<String>();
-        comingSoon.add(" ");
+        llegar.add("Boton de mostrar ruta con gps y transporte publico ");
 
         List<String> creditos = new ArrayList<String>();
-        comingSoon.add(" ");
+        creditos.add(" Informacion del desarrollador\n" +
+                "Institucion\n" +
+                "Personas que colaboraron");
+        List<String> comentarios = new ArrayList<String>();
+        comentarios.add("Area de texto para que el usuario mande un comentario o sugerencia al museo");
 
-        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);
+        listDataChild.put(listDataHeader.get(0), direccion); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), horarios);
+        listDataChild.put(listDataHeader.get(2), tarifa);
         listDataChild.put(listDataHeader.get(3), Servicios);
         listDataChild.put(listDataHeader.get(4), llegar);
         listDataChild.put(listDataHeader.get(5), creditos);
+        listDataChild.put(listDataHeader.get(6), comentarios);
     }
 
 
